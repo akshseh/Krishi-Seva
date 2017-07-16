@@ -1,4 +1,5 @@
 # RHoK-Delhi
 
-*Theme chosen
- Governance & Digital Inclusion*
+## _Theme chosen_ :
+
+ *Governance & Digital Inclusion*
