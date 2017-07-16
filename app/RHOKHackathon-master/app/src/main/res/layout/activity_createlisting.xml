@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff71c2ff"
+    android:fitsSystemWindows="true"
+    android:onClick="c">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="56dp"
+        android:weightSum="1">
+
+        <!-- Email Label -->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount"
+            app:met_baseColor="#fffffbf9"
+            app:met_errorColor="#ffff7064"
+            app:met_floatingLabel="normal"
+            app:met_maxCharacters="25"
+            app:met_minCharacters="0"
+            android:inputType="numberDecimal"
+            app:met_primaryColor="#ff46e358"
+            app:met_textColorHint="#ffdfdbd9"
+
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Kilograms"
+            app:met_baseColor="#fffffbf9"
+            android:inputType="numberDecimal"
+            app:met_errorColor="#ffff7064"
+            app:met_floatingLabel="normal"
+            app:met_maxCharacters="25"
+            app:met_minCharacters="0"
+            app:met_primaryColor="#ff46e358"
+            app:met_textColorHint="#ffdfdbd9"
+
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Location"
+            app:met_baseColor="#fffffbf9"
+
+            app:met_errorColor="#ffff7064"
+            app:met_floatingLabel="normal"
+            app:met_maxCharacters="25"
+            app:met_minCharacters="0"
+            app:met_primaryColor="#ff46e358"
+            app:met_textColorHint="#ffdfdbd9"
+
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="im1"
+                android:background="@drawable/rice"
+                android:layout_gravity="left" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+
+                android:onClick="im2"
+                android:background="@drawable/corn"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="im3"
+                android:background="@drawable/wheat"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imrageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="im1"
+                android:background="@drawable/rye"
+                android:layout_gravity="left" />
+
+            <ImageView
+                android:id="@+id/imageeView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+
+                android:onClick="im2"
+                android:background="@drawable/oat"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/imageVierw3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="im3"
+                android:background="@drawable/flour"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/sign"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:onClick="c"
+            android:text="CREATE"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorError="@color/red_error"
+            custom:pb_colorNormal="@color/blue_normal"
+            custom:pb_colorPressed="@color/blue_pressed"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_textComplete="Success"
+            custom:pb_textError="Error"
+            custom:pb_textProgress="Loading" />
+
+    </LinearLayout>
+</ScrollView>

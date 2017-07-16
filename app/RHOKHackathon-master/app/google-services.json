@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "945225625250",
+    "firebase_url": "https://kisan-c7901.firebaseio.com",
+    "project_id": "kisan-c7901",
+    "storage_bucket": "kisan-c7901.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945225625250:android:1341fc341fb046e8",
+        "android_client_info": {
+          "package_name": "com.arshilgenius.kisan.agriculture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945225625250-tl37gudfouveo9reb9rtjc8abm8qejsu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCie3uLLfLyYWgIV7A8jUQ2ZCPURQqEumM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

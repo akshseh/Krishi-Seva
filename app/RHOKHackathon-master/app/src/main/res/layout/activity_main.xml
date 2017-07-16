@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" tools:context=".MainActivity"
+    android:background="#ff56d0ff">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Click  on  the   Button to  Activate  Personal   Assistant"
+    android:textSize="20sp"
+    android:textColor="@android:color/holo_red_dark"
+    android:textStyle="bold"
+    android:layout_margin="30dp"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/listenButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="listenButtonOnClick"
+        android:background="@drawable/microphone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Response"
+        android:layout_gravity="center"
+        android:id="@+id/resultTextView"
+        android:layout_below="@+id/listenButton"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+</LinearLayout>
