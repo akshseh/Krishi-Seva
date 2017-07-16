@@ -1,0 +1,60 @@
+#the-nav .brand-logo{
+  font-size: 24px;
+}
+
+#the-nav li a{
+  color: #000;
+  font-family: roboto;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 64px;
+}
+
+#the-nav li a.active{
+  background-color: #eee;
+  border-bottom: 4px solid #09f;
+}
+
+#content-div{
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+#content-div .header{
+  font-size: 50px;
+  font-weight: 100;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+ul#lol{
+  padding-left:30px;
+}
+
+ul#lol li{
+  line-height: 30px;
+  font-size: 16px;
+}
+
+ul#lol li span{
+  color: #09f;
+}
+
+ul.lol{
+  
+}
+
+ul.lol li{
+  font-size: 14px;
+}
+
+ul.lol li span{
+  color: #09f;
+  font-size: 16px;
+}
+
+ul.lol li.head{
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}

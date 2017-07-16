@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <!--Meta for responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!--Fonts-->    
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+    
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    
+  </head>
+  <body>
+    
+    <div id="logo-div"></div>
+    
+    <!--Login div-->
+    <div class="row">
+      <div id="login-container" class="col s10 l4 offset-s1 offset-l4">
+        <h1 class="header">Login</h1>
+        <form method = "post" action = "/login">
+          <input id="user-phone" class="browser-default" placeholder="Phone" type="number">
+          <input id="user-password" class="browser-default" placeholder="Password" type="password">
+          <center style="margin-bottom:0px;margin-top:10px;">
+            <p style="display:inline-block;">
+              <input class="with-gap checkbox-c" name="user-type" type="radio" id="farmer-rad" value="farmer" checked/>
+              <label for="farmer-rad">Farmer</label>
+            </p>
+            <p style="display:inline-block;">
+              <input class="with-gap checkbox-c" name="user-type" type="radio" id="admin-rad" value="admin" />
+              <label for="admin-rad">Admin</label>
+            </p>
+          </center>
+          <br>
+          <center><span id="alert-text">&nbsp;</span></center>
+          <center style="margin-top: 10px">
+            <button id="login-button" type="button" class="btn-large waves-effect" onclick="submitLogin()">Submit</button>
+            <br><br>
+            <a href="register.html" style="color:#fff;">or <span style="color:#26a69a">Register</span></a>
+          </center>
+        </form>
+      </div>
+    </div>
+    
+    <!--Scripts import-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
