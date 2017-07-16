@@ -10,3 +10,11 @@ more graphic and less text.
 nutrient content of the soil
 
 Block-wise nutrient status - Dynamic - changes when a new crop is being sowed.
+
+Digital Inclusion:  
+* Access
+* Adoption 
+* Application
+   
+Infrastructure we are assuming that through Digital India, All the farmers will have access to the internet till 2020(As per the plan). If this works in the planned manner, farmers' will access to the portal through their AdhaarCard or Phone number. 
+   
