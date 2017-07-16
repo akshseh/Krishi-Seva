@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy</title>
+    
+    <link rel="stylesheet" href="dashboard.css" />
+    
+    <!--Meta for responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!--Fonts-->    
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+    
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    
+  </head>
+  <body>
+    
+    <!--NavBar-->    
+    <div class="navbar-fixed">
+      <nav id="the-nav">
+        <div class="nav-wrapper white">
+          <!--Logo-->
+          <a href="/" class="brand-logo" style="color: #09f;padding-left: 30px">
+            TheAppName
+          </a>
+          <!--Menu icon for small screen devices-->
+          <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons" style="color:#000">menu</i></a>
+          <!--Nav content-->
+          <ul id="pc" class="right hide-on-med-and-down">
+            <li><a class="waves-effect waves-lighten" href="/farmer/sell">Sell</a></li>
+            <li><a class="waves-effect waves-lighten active">Buy</a></li>
+            <li><a class="waves-effect waves-lighten" href="/farmer/ins">Govt. Schemes</a></li>
+            <li><a class="waves-effect waves-lighten" href="/farmer/help">Help</a></li>
+            <li><a class="waves-effect waves-lighten" href="/farmer/history">History</a></li>
+            <li><a class="waves-effect waves-lighten" href="/logout">Logout</a></li>
+          </ul>
+        </div>
+      </nav>    
+    </div>
+    
+    <!--Nav content for small screen devices-->
+    <ul class="side-nav" id="mobile-demo">
+      <li><a class="waves-effect waves-lighten" href="/farmer/sell">Sell</a></li>
+      <li><a class="waves-effect waves-lighten active">Buy</a></li>
+      <li><a class="waves-effect waves-lighten" href="/farmer/ins">Govt. Schemes</a></li>
+      <li><a class="waves-effect waves-lighten" href="/farmer/help">Help</a></li>
+      <li><a class="waves-effect waves-lighten" href="/farmer/history">History</a>
+      </li>
+      <li><a class="waves-effect waves-lighten" href="/logout">Logout</a></li>
+    </ul>
+    
+    <!--Content-->
+    <div id="content-div">
+      <h1 class="header">Buy goods</h1>
+      <form class="row" method="post">
+        <div class="row">
+          <div class="input-field col s12 l4">
+            <select name="name" id="crop-name" onchange="changedCrop()">
+              <option value="none" disabled selected required>Select item</option>
+              <optgroup label="Fertilizers">
+                <option value="amp">Ammonium phosphate - अमोनियम फॉस्फेट</option>
+                <option value="ams">Ammonium sulphate - अमोनियम सल्फेट</option>
+                <option value="urea">Urea - यूरिया</option>
+                <option value="pn">Potassium nitrate - पोटेशियम नाइट्रेट</option>
+              </optgroup>
+              <optgroup label="Seeds">
+                <option value="maize">Maize - मक्का</option>
+                <option value="maize">Onion - प्याज</option>
+                <option value="crop">Crop - फ़सल</option>
+              </optgroup>              
+            </select>
+            <label>Select items</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m4">
+            <input name="amt" onchange="changedCrop()" id="amt" class="validate" type="number" required>
+            <label for="amt">Quantity(in kgs)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m4">
+            <input name="address" onchange="changedCrop()" id="amt" class="validate" type="text" required>
+            <label for="amt">Address</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m4">
+            <input name="price" id="price" disabled value="0" id="disabled" type="number" class="validate">
+            <label for="disabled">Price</label>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;<button type="submit" class="btn-large light-blue">Submit</button>
+      </form>
+    </div>
+    
+    <!--Scripts import-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
