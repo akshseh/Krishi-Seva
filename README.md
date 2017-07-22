@@ -1,4 +1,4 @@
-# Krishi-Seva
+# Krishi-Seva (Farmer's friend)
 A smart web-app for farmers which recommends crops according to the data collected by ICAR and the climatic conditions.
 
 _Theme_:  *Governance & Digital Inclusion*
