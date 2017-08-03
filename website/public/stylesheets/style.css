@@ -1,0 +1,79 @@
+body{
+  background-image: url(img/nbg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#logo-div{
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  background-image: url(img/logo.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 100px;
+  background-position: center;
+}
+
+#login-container{
+  background-color: rgba(0,0,0,0.3);
+  padding: 40px 80px;
+  padding-top: 20px;
+  border-radius:5px;
+}
+
+#login-container .header{
+  font-size: 40px;
+  font-family: roboto;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+}
+
+#login-container input{
+  border: 1px solid #ccc!important;
+  outline: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  height: 40px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 4px;
+  box-shadow: 0 0 0px #9ef;
+  transition: 0.3s;
+  text-align: center;
+  color: #fff;
+}
+
+#login-container input:focus{
+  border-bottom: 0;
+  outline: none;
+/*  box-shadow: 0 0 10px #9ef!important;*/
+  border: 1px solid #26a69a!important;
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #aaa;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #aaa;
+   opacity:  1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #aaa;
+   opacity:  1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #aaa;
+}
+input::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #aaa;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

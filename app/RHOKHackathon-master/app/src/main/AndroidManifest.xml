@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.arshilgenius.kisan.agriculture" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Permissions required by the sync adapter -->
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.arshilgenius.kisan.agriculture.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon" >
+        <activity
+            android:name="com.arshilgenius.kisan.agriculture.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName="com.arshilgenius.kisan.agriculture.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.arshilgenius.kisan.agriculture.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.arshilgenius.kisan.agriculture.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.arshilgenius.kisan.agriculture.MainActivity"
+            android:theme="@style/SettingsTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.arshilgenius.kisan.agriculture.MainActivity" />
+        </activity>
+
+        <provider
+            android:name="com.arshilgenius.kisan.agriculture.data.WeatherProvider"
+            android:authorities="@string/content_authority"
+            android:exported="false"
+            android:syncable="true" />
+
+        <!-- SyncAdapter's dummy authentication service -->
+        <service android:name="com.arshilgenius.kisan.agriculture.sync.SunshineAuthenticatorService" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <!-- The SyncAdapter service -->
+        <service
+            android:name="com.arshilgenius.kisan.agriculture.sync.SunshineSyncService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAm7IvC5DpVPeKLTeX0DUT8tYOqHRaccrA" />
+        <activity
+            android:name="com.arshilgenius.kisan.agriculture.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.arshilgenius.kisan.agriculture.menuscreen"
+            android:label="@string/title_activity_menuscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.arshilgenius.kisan.agriculture.orders"
+            android:label="Order A Product"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name="com.arshilgenius.kisan.agriculture.newsmain"
+            android:label="News"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name="com.arshilgenius.kisan.agriculture.MapsActivity"
+            android:label="Maps"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name="com.arshilgenius.kisan.agriculture.sunmain"
+            android:label="Weather Forecast"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name="com.arshilgenius.kisan.agriculture.forum"
+            android:label="@string/title_activity_forum"
+            android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

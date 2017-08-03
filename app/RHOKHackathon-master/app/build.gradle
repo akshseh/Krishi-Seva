@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    dexOptions {
+        javaMaxHeapSize "4g"
+
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+    defaultConfig {
+        applicationId "com.arshilgenius.kisan.agriculture"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildTypes.each {
+        it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', MyOpenWeatherMapApiKey
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'ai.api:libai:1.3.5'
+    compile 'ai.api:sdk:2.0.2@aar'
+// api.ai SDK dependencies
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'commons-io:commons-io:2.4'
+    compile 'me.itangqi.waveloadingview:library:0.3.5'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-staggeredgrid:2.1.0'
+    compile 'com.nightonke:boommenu:2.0.6'
+    compile 'com.firebase:firebase-client-android:2.5.2+'
+    compile 'com.github.gabrielemariotti.cards:cardslib-core:2.1.0'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.beardedhen:androidbootstrap:2.3.0'
+    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:cardview-v7:24.0.+'
+    compile 'com.android.support:recyclerview-v7:24.0.+'
+    compile 'co.intentservice.android-chat-ui:chat-ui:0.1.1'
+    compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.1.0'
+    compile 'com.roughike:bottom-bar:2.0.2'
+    compile 'com.google.android.gms:play-services:9.0.0'
+    compile 'net.gotev:speech:1.1.7'
+    compile 'com.github.florent37:awesomebar:1.0.2'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

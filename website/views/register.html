@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    
+    <link rel="stylesheet" href="/stylesheet/style.css" />
+    
+    <!--Meta for responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!--Fonts-->    
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+    
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    
+  </head>
+  <body>
+    
+    <div id="logo-div"></div>
+    
+    <!--Register div-->
+    <div class="row">
+      <div id="login-container" class="col s10 l4 offset-s1 offset-l4">
+        <h1 class="header">Register</h1>
+        <form id="form" method = "post" action = "/login">
+          <input id="user-name" class="browser-default" placeholder="Name" type="text">
+          <input id="user-phone" class="browser-default" placeholder="Phone" type="number">
+          <input id="user-address" class="browser-default" placeholder="Address" type="text">
+          <input id="user-password" class="browser-default" placeholder="Password" type="password">
+          <br>
+          <center style="margin-top: 10px">&nbsp;<span id="alert-text"></span></center>
+          <center style="margin-top: 20px">
+            <button type="button" class="btn-large waves-effect" onclick="submitReg()">Submit</button>
+            <br><br>
+            <a href="login.html" style="color:#fff;">or <span style="color:#26a69a">Login</span></a>
+          </center>
+        </form>
+      </div>
+    </div>
+    
+    <!--Scripts import-->
+    <script type="text/javascript" src="/javascripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
