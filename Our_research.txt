@@ -8,7 +8,7 @@
 more graphic and less text. 
 nutrient content of the soil
 
-Block-wise nutrient status - Dynamic - changes when a new crop is being sowed.
+Block-wise nutrient status is dynamic. It changes when a new crop is being sowed.
 
 Digital Inclusion:  
 * Access
