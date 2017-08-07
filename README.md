@@ -4,4 +4,4 @@ You can also buy/sell your crops using that app.
 
 _Theme_:  *Governance & Digital Inclusion*
 
-To know more about it, please read the Presentation [here](https://github.com/aksh98/Krishi-Seva/blob/master/krishi.pdf)   
+To know more about it, please read the slides of the Presentation [here](https://github.com/aksh98/Krishi-Seva/blob/master/krishi.pdf)   
