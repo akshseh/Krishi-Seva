@@ -12,7 +12,7 @@ To know more about it, please read the [slides of the Presentation here](https:/
 or view it here : http://www.hackathon.io/858301  
 
 Contributors:
-- Akarsha Sehwag @aksh98
-- Arshil Khan @arshilgenius
-- Shubhangi Mishra @shubhangimisra
-- Deepak Gupta @deepak15022
+- Akarsha Sehwag [@aksh98](https://github.com/aksh98)
+- Arshil Khan [@arshilgenius](https://github.com/arshilgenius)
+- Shubhangi Mishra [@shubhangimisra](https://github.com/shubhangimisra)
+- Deepak Gupta [@deepak15022](https://github.com/deepak15022)
