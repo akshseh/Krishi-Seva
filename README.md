@@ -10,3 +10,9 @@ _Theme_:  *Governance & Digital Inclusion*
 To know more about it, please read the [slides of the Presentation here](https://github.com/aksh98/Krishi-Seva/blob/master/krishi.pdf) 
 
 or view it here : http://www.hackathon.io/858301  
+
+Contributors:
+- Akarsha Sehwag @aksh98
+- Arshil Khan @arshilgenius
+- Shubhangi Mishra @shubhangimisra
+- Deepak Gupta @deepak15022
